@@ -21,9 +21,7 @@ const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 const getApiData = require('./src/controllers/getApiData');
 require('dotenv').config()
-const {
-  PORT
-} = process.env;
+const PORT = process.env.PORT || 3001;
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => { //// aqui cambiar a alter luego de que la aplicacioneste lista para que no se reinicien los datos en la bd
   ////esta linea es la conexion con el server 
