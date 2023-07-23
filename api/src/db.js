@@ -1,6 +1,7 @@
 require('dotenv').config(); //// se usa dotenv para que la informacion personal como usuario de la db sea accesible pero no se suba por ejemplo a githut
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
+const pg = require('pg');
 const path = require('path');
 const {
   DB_USER, DB_PASSWORD, DB_PORT,DB_NAME, DB_HOST,
@@ -9,6 +10,7 @@ const {
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?sslmode=require`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+  dialectModule: pg
 });
 
 const basename = path.basename(__filename);
