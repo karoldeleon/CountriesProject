@@ -6,7 +6,7 @@ Este Proyecto me brindo mi primera experiencia de desarrollo Web Full Stack trab
 
 ## Tech Stack
 
-**Client:** React, Redux, CSS
+**Client:** Javascript , HTML , React, Redux, CSS
 
 **Server:** Node, Express , Sequelize , PostgreSQL 
 
@@ -30,7 +30,7 @@ This Project gave me my first experience of Full Stack Web development working d
 
 ## Tech Stack
 
-**Client:** React, Redux, CSS
+**Client:** Javascript , HTML , React, Redux, CSS
 
 **Server:** Node, Express , Sequelize , PostgreSQL 
 
